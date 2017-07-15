@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{
+				width: 500px;
+				height:500px;
+				top:150px;
+				padding: auto;
+				margin: auto;
+				position: relative;
+			}
+			img{
+				/*transition: all 5s;*/
+				-webkit-filter: grayscale(0.9) brightness(3);
+				animation: demo1 5s forwards;
+				src: url(img/456.png);
+			}
+			@keyframes demo1{
+				10%{-webkit-filter: grayscale(0.9) brightness(3);}
+				10%{-webkit-filter: grayscale(0.5) brightness(2);}
+				100%{-webkit-filter: grayscale(0) brightness(1);
+					/*src: url("img/456.png");*/
+				}
+				
+				
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="img/123.png" />
+		</div>
+		
+	</body>
+</html>
